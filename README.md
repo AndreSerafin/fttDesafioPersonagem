@@ -1,0 +1,1 @@
+Este repositório contém desafios propostos pela FTT(Fabrica de Técnologias Turing) em seu bootcamp para seleção de novos internos, as pastas estão separadas por desfios com cada uma contendo um desafio diferente
