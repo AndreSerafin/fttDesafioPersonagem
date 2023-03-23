@@ -1,5 +1,3 @@
-# nome, descrição, link para imagem, programa e animador.
-
 class Personagem():
     def __init__(self, nome, descricao, link, programa, animador):
         self._nome = nome
@@ -7,13 +5,22 @@ class Personagem():
         self._link = link
         self._programa = programa
         self._animador = animador
-        
+
     def vizualiza_personagem(self):
         print(f"Nome do personagem: {self._nome}")
         print(f'Descrição do personagem: {self._descricao}')
         print(f'Link: {self._link}')
         print(f'Programa: {self._programa}')
         print(f'Animador: {self._animador}')
+
+
+def cadastro_personagem():
+    p = Personagem(input('Nome do Personagem: '),
+                   input('Descrição do Personagem: '),
+                   input('Link: '),
+                   input('Programa: '),
+                   input('Animador: '))
+    return p
 
 
 op = 0
@@ -37,12 +44,7 @@ while (op != 3):
 
     match(op):
         case 1:
-            p1 = Personagem(input('Nome do Personagem: '),
-                            input('Descrição do Personagem: '),
-                            input('Link: '),
-                            input('Programa: '),
-                            input('Animador: '))
-            lista_personagens.append(p1)
+            lista_personagens.append(cadastro_personagem())
         case 2:
 
             j = 1
