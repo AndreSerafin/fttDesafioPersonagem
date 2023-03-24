@@ -1,0 +1,14 @@
+Essa simples API foi construida utilizando o micro-framework Flask juntamente com as bibliotecas 
+Flask-restx e Werkzeug. Tem como objetivo receber dados por meio de um arquivo json a partir do método
+POST e disponibiliza-los a partir do Método GET no end point "/characters"
+
+Formato do corpo do json para o método POST
+
+    {
+    "id": 4,
+    "name": "Hora de Aventura",
+    "description": "aventuras de Finn e Jake no mundo de Ooo",
+    "link": "https://www.linkplaceholder.com",
+    "program": "desenho animado de fantasia",
+    "animador": "Cartoon Network Studios"
+    }
